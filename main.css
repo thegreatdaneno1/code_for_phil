@@ -1,0 +1,102 @@
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-light-background: #fafafa;
+    --color-medium-background: #1c2023;
+    --color-dark-background: #000;
+
+    --color-accent: #7affcf;
+
+    --color-text: #292929;
+    --color-text-muted: #8b9cb3;
+}
+
+main {
+    flex: 1;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: var(--color-medium-background);
+}
+
+.header {
+    background-color: var(--color-dark-background);
+    left: 0px;
+    top: 0px;
+    font-family: "Raleway", sans-serif;
+}
+
+.header__logo {
+    width: auto;
+    height: 24px;
+    margin: 7%;
+}
+
+.span__username {
+    color: var(--color-text);
+    font-family: "Raleway Black";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 19.2px;
+    line-height: 21px;
+}
+
+.time__comment {
+    color: var(--color-text-muted);
+    font-family: "Roboto Mono", monospace;
+    font-size: 13.33px;
+    line-height: 25px;
+}
+
+.p__comment {
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 15px;
+}
+
+.article__comment {
+    background-color: var(--color-light-background);
+    margin: 7%;
+    margin-bottom: 0%;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.hr {
+    color: var(--color-text);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.button {
+    background-color: var(--color-accent);
+    font-family: "Raleway Black";
+    font-size: 16px;
+    color: var(--color-text);
+    padding: 8px 24px;
+    border-radius: 4px;
+    border-width: 6px;
+    border-color: var(--color-medium-background);
+    align-content: right;
+}
+
+
+footer {
+    background-color: var(--color-dark-background);
+    color: var(--color-accent);
+    font-family: "Raleway Black";
+    padding: 4%;
+    text-align: center;
+    margin-top: 5%;
+}
